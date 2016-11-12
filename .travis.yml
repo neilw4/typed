@@ -6,7 +6,7 @@ node_js:
   - "iojs"
 env:
   - BUILD=build TEST_SUITE=test
-  - BUILD=build-test-es5 TEST_SUITE=test-es5
+#  - BUILD=build-test-es5 TEST_SUITE=test-es5
 script: 
   - npm run lint
   - npm run $BUILD
