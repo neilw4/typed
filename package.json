@@ -1,0 +1,48 @@
+{
+  "name": "typed",
+  "description": "An explicit type system for JS with implicit polymorphism and co/contravariance.",
+  "author": {
+    "name": "Neil Wells",
+    "url": "https://github.com/neilw4"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/neilw4/typed"
+  },
+  "keywords": [
+    "es6",
+    "npm",
+    "type",
+    "library",
+    "annotate",
+    "annotations",
+    "implicit",
+    "covariant",
+    "covariance",
+    "contravariant",
+    "conravariance"
+  ],
+  "version": "0.0.1",
+  "main": "./out/src/typed.js",
+  "devDependencies": {
+    "babel-cli": "^6.2.4",
+    "babel-eslint": "^7.1.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-plugin-transform-decorators-legacy": "~1.3.4",
+    "babel-register": "^6.2.0",
+    "eslint": "~3.10.0",
+    "eslint-config-google": "^0.7.0",
+    "mocha": "^2.2.5",
+    "tostr": "^0.1.0"
+  },
+  "scripts": {
+    "all": "npm run build && npm run test && npm run lint #&& npm run test-es5 && npm run lint",
+    "lint": "eslint src test --fix",
+    "build": "babel src --out-dir out/src",
+    "build-test-es5": "npm run build && babel test --out-dir out/test && sed -i 's/\\/src\\//\\/out\\/src\\//' out/test/*.js",
+    "test-es5": "npm run build-test-es5 && mocha --ui tdd out/test #TODO fix",
+    "watch": "babel src --out-dir out/src --watch",
+    "test": "mocha --ui tdd --compilers js:babel-register"
+  }
+}
