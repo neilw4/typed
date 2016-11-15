@@ -3,6 +3,7 @@
   "extends": ["eslint:recommended", "google"],
     "rules": {
         "arrow-parens": ["warn", "as-needed"],
+        "eqeqeq": "error",
         "max-len": ["warn", 100],
         "no-unused-vars": "warn",
         "no-warning-comments": "warn",

@@ -2,9 +2,7 @@ import {assert, isDef, zip} from './util.js'
 import {constructs, isSuperType} from './checks.js'
 import tostr from 'tostr'
 
-export const Any = {
-  constructs: isDef,
-  isSuperType: isDef}
+export const Any = {}
 
 export const Type = {
   constructs: isDef,

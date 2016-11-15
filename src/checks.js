@@ -1,4 +1,4 @@
-import {log, zip, assert} from './util'
+import {log, zip, assert, isDef} from './util'
 import tostr from 'tostr'
 
 /**
