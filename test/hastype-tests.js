@@ -28,27 +28,27 @@ describe('any', () => {
 })
 
 describe('referential equality', () => {
-  //TODO
+  // TODO
 })
 
 describe('deep equality', () => {
-  //TODO
+  // TODO
 })
 
 describe('deep equality with types', () => {
-  //TODO
+  // TODO
 })
 
 describe('class hierarchies', () => {
-  //TODO(both instance and subclass relationships)
+  // TODO(both instance and subclass relationships)
 })
 
 describe('hasInstance method', () => {
-  //TODO
+  // TODO
 })
 
 describe('collections', () => {
-  //TODO
+  // TODO
 })
 
 describe('binary tree', () => {
@@ -56,13 +56,13 @@ describe('binary tree', () => {
 })
 
 describe('regexp', () => {
-  //TODO
+  // TODO
 })
 
 describe('cycles', () => {
-  //TODO
+  // TODO
 })
 
 describe('iterator', () => {
-  //See description of var1['__iterator__'] in https://github.com/google/closure-library/blob/master/closure/goog/testing/asserts.js
+  // See description of var1['__iterator__'] in https://github.com/google/closure-library/blob/master/closure/goog/testing/asserts.js
 })

@@ -43,6 +43,6 @@
     "build-test-es5": "npm run build && babel test --out-dir out/test && sed -i 's/\\/src\\//\\/out\\/src\\//' out/test/*.js",
     "test-es5": "npm run build-test-es5 && mocha --ui tdd out/test #TODO fix",
     "watch": "babel src --out-dir out/src --watch",
-    "test": "mocha --ui tdd --compilers js:babel-register"
+    "test": "mocha --compilers js:babel-register"
   }
 }

@@ -3,7 +3,7 @@ import tostr from 'tostr'
 
 /**
  * @param superType a type
- * @param subType 
+ * @param subType
  * @return whether an instance of the subtype could be safely substituted for an instance of the supertype.
  */
 export function isSuperType(superType, subType) {
